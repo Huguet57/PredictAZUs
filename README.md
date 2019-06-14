@@ -14,7 +14,7 @@ Els ``phi`` i ``theta`` són coeficients escalars reals i el nombre ``B`` és ta
 
 ![Definició de B](https://latex.codecogs.com/gif.latex?%5Cdpi%7B150%7D%20X_%7Bt-1%7D%20%3D%20B%20X_t)
 
-Per tant,
+Per tant, el model ve definit per:
 
 ![Sèrie temporal](https://latex.codecogs.com/gif.latex?%5Cdpi%7B150%7D%20%281%20-%20%5Cphi_1%20B%20-%20%5Cphi_2%20B%5E2%29%281%20-%20B%5E%7B48%7D%29%281%20-%20B%29X_t%20%3D%20%281%20&plus;%20%5Ctheta_1%20B%29%20Z_t)
 
