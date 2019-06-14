@@ -18,4 +18,4 @@ Per tant,
 
 ![Sèrie temporal](https://latex.codecogs.com/gif.latex?%5Cdpi%7B300%7D%20%281%20-%20%5Cphi_1%20B%20-%20%5Cphi_2%20B%5E2%29%281%20-%20B%5E%7B48%7D%29%281%20-%20B%29X_t%20%3D%20%281%20&plus;%20%5Ctheta_1%20B%29%20Z_t)
 
-Sent 48 el nombre d'assaigos per temporada, ens haurem de fixar en els \textbf{tres assaigos anteriors}, i en els \textbf{quatre assaigos anteriors} de l'assaig corresponent de l'any passat.
+Sent 48 el nombre d'assaigos per temporada, ens haurem de fixar en els **tres assaigos anteriors**, i en els **quatre assaigos anteriors** de l'assaig corresponent de l'any passat.
