@@ -10,14 +10,12 @@ De l'estudi, també ens surt que la sèrie és de la forma:
 \[
 (1 - \phi_1 B - \phi_2 B^2)(1 - B^48)(1 - B)X_t = (1 + \theta_1 B) Z_t
 \]
-Amb $$X_t$$ la variable aleatòria que recull el nombre de gent que va a assaig en un assaig $$t$$ i $$Z_t$$ el soroll de l'assaig $$t$$, diferència de la predicció esperada de gent a assaig aquell dia $$\mathbb{E}[X_t | X_{t-1},\ldots,X_1]$$ amb el valor real $$X_t$$. Els $$\phi_i$$, $$\theta_j$$ són coeficients escalars reals i el nombre $$B$$ és tal que: $$X_{t-1} = B X_t$$. Per tant,
+Amb Xt la variable aleatòria que recull el nombre de gent que va a assaig en un assaig t i Zt el soroll de l'assaig t, diferència de la predicció esperada de gent a assaig aquell dia amb el valor real.
+![Definició de Zt](https://latex.codecogs.com/gif.latex?%5Cdpi%7B300%7D%20Z_t%20%3D%20X_t%20-%20%5Cmathbb%7BE%7D%5BX_t%20%7C%20X_%7Bt-1%7D%2C%5Cldots%2CX_1%5D)
+Els phi i theta són coeficients escalars reals i el nombre B és tal que:
+![Definició de B](https://latex.codecogs.com/gif.latex?%5Cdpi%7B300%7D%20X_%7Bt-1%7D%20%3D%20B%20X_t)
+Per tant,
 
-$$
-(1 - \phi_1 B - \phi_2 B^2)(1 - B^48)(1 - B)X_t = (1 + \theta_1 B) Z_t \\
-X_t-X_{t-1}-\phi_1\,X_{t-1}+\phi_1\,X_{t-2}-\phi_2\,X_{t-2}+\phi_2\,X_{t-3}-X_{t-48}+X_{t-49}+\phi_1\,X_{t-49}-\phi_1\,X_{t-50}+\phi_2\,
- X_{t-50}-\phi_2\,X_{t-51} = Z_t + \theta_1 Z_{t-1} \\
-X_t = X_{t-1}+\phi_1\,X_{t-1}-\phi_1\,X_{t-2}+\phi_2\,X_{t-2}-\phi_2\,X_{t-3}+X_{t-48}-X_{t-49}-\phi_1\,X_{t-49}+\phi_1\,X_{t-50}-\phi_2\,
- X_{t-50}+\phi_2\,X_{t-51} + Z_t + \theta_1 Z_{t-1}
-$$
+![Sèrie temporal](https://latex.codecogs.com/gif.latex?%5Cdpi%7B300%7D%20%281%20-%20%5Cphi_1%20B%20-%20%5Cphi_2%20B%5E2%29%281%20-%20B%5E%7B48%7D%29%281%20-%20B%29X_t%20%3D%20%281%20&plus;%20%5Ctheta_1%20B%29%20Z_t)
 
 Sent 48 el nombre d'assaigos per temporada, ens haurem de fixar en els \textbf{tres assaigos anteriors}, i en els \textbf{quatre assaigos anteriors} de l'assaig corresponent de l'any passat.
