@@ -6,14 +6,14 @@ Un primer estudi ràpid de les dades com a sèries temporals ens dona els següe
 Com veiem, no és de gran ajuda la predicció estàndard perquè a l'haver-hi només un any de dades no pot detectar patrons repetits anualment. Per això, la segona predicció promet més; tenint dos anys de dades com a input.
 ![Predicció de la temporada 2019-2020](https://github.com/Huguet57/predictazus/blob/master/plots/PredTemporada20192020.png)
 
-De l'estudi, també ens surt que la sèrie és de la forma:
-\[
-(1 - \phi_1 B - \phi_2 B^2)(1 - B^48)(1 - B)X_t = (1 + \theta_1 B) Z_t
-\]
-Amb Xt la variable aleatòria que recull el nombre de gent que va a assaig en un assaig t i Zt el soroll de l'assaig t, diferència de la predicció esperada de gent a assaig aquell dia amb el valor real.
-![Definició de Zt](https://latex.codecogs.com/gif.latex?%5Cdpi%7B100%7D%20Z_t%20%3D%20X_t%20-%20%5Cmathbb%7BE%7D%5BX_t%20%7C%20X_%7Bt-1%7D%2C%5Cldots%2CX_1%5D)
+De l'estudi, també ens surt que la sèrie segueix un model SARIMA(2,1,1)(0,1,0)48. Sigui Xt la variable aleatòria que recull el nombre de gent que va a assaig en un assaig t i Zt el soroll de l'assaig t, diferència de la predicció esperada de gent a assaig aquell dia amb el valor real.
+
+![Definició de Zt](https://latex.codecogs.com/gif.latex?%5Cdpi%7B300%7D%20Z_t%20%3D%20X_t%20-%20%5Cmathbb%7BE%7D%5BX_t%20%7C%20X_%7Bt-1%7D%2C%5Cldots%2CX_1%5D)
+
 Els phi i theta són coeficients escalars reals i el nombre B és tal que:
-![Definició de B](https://latex.codecogs.com/gif.latex?%5Cdpi%7B100%7D%20X_%7Bt-1%7D%20%3D%20B%20X_t)
+
+![Definició de B](https://latex.codecogs.com/gif.latex?%5Cdpi%7B300%7D%20X_%7Bt-1%7D%20%3D%20B%20X_t)
+
 Per tant,
 
 ![Sèrie temporal](https://latex.codecogs.com/gif.latex?%5Cdpi%7B300%7D%20%281%20-%20%5Cphi_1%20B%20-%20%5Cphi_2%20B%5E2%29%281%20-%20B%5E%7B48%7D%29%281%20-%20B%29X_t%20%3D%20%281%20&plus;%20%5Ctheta_1%20B%29%20Z_t)
